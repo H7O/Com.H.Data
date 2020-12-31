@@ -44,5 +44,21 @@ namespace Com.H.Data
         {
             _mapper.FillWith(destination, source, skipNull);
         }
+
+        /// <summary>
+        /// Rrturns values of IDictionary after filtering them based on an IEnumerable of keys.
+        /// The filter keys don't have to be of the same type as the IDictionary keys.
+        /// They only need to be mappable to IDictionary keys type (i.e. can be conerted to IDicionary keys type)
+        /// </summary>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <typeparam name="TOKey"></typeparam>
+        /// <param name="dictionary"></param>
+        /// <param name="oFilter"></param>
+        /// <returns></returns>
+        public static IEnumerable<TValue> OrdinallyMappedFilteredValues<TKey, TValue, TOKey>(
+            IDictionary<TKey, TValue> dictionary, IEnumerable<TOKey> oFilter)
+            => oFilter.Join(dictionary, o => o.Map<TKey>(), d => d.Key, (o, d) => d.Value);
+
     }
 }
