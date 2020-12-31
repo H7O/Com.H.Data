@@ -7,7 +7,7 @@
     <Copyright>Hussein Al Bayati</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/H7O/Com.H.Data</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/H7O/Com.H.Threading</RepositoryUrl>
+    <RepositoryUrl>https://github.com/H7O/Com.H.Data</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Dynamic data mapping</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
