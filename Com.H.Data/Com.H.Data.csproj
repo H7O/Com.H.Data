@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Hussein Al Bayati</Authors>
+    <Description>API to help simplify, among other things, dynamic data mapping between various data sources and data models.</Description>
+    <Copyright>Hussein Al Bayati</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/H7O/Com.H.Data</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/H7O/Com.H.Threading</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Dynamic data mapping</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Com.H">
+      <HintPath>..\..\Com.H\Com.H\bin\Release\net5.0\Com.H.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
