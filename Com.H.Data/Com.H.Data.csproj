@@ -12,11 +12,12 @@
     <PackageTags>Dynamic data mapping</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Com.H" Version="0.0.7" />
+    <PackageReference Include="Com.H" Version="0.0.8" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
