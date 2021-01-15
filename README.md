@@ -1,2 +1,2 @@
-# Com.H.Data
-API to help simplify, among other things, dynamic data mapping between various data sources and data models.
+# Com.H.Data - Depricated
+Has been merged with [Com.H][https://github.com/H7O/Com.H] library
