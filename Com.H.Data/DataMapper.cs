@@ -42,7 +42,10 @@ namespace Com.H.Data
             if (source == null) return null;
             return source.Select(x => this.Map<T>(x));
         }
-
+        public object Map(object source, Type type)
+            => type.GetMethod("Map").MakeGenericMethod(type)
+            .Invoke(this, new object[] { source });
+        
         public T Map<T>(object source)
         {
             if (source == null) return default;

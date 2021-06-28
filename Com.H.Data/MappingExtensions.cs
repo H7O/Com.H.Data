@@ -25,6 +25,9 @@ namespace Com.H.Data
             return _mapper.Map<T>(source);
         }
 
+        public static object Map(this object source, Type dstType)
+            => _mapper.Map(source, dstType);
+
         public static T Clone<T>(this T source)
         {
             return _mapper.Clone<T>(source);
